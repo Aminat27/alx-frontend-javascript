@@ -1,8 +1,6 @@
-const getListStudentIds = (myArray) => {
-  if (!Array.isArray(myArray)) {
-    return [];
-  }
-  return myArray.map((studentId) => studentId.id);
+const getStudentsByLocation = (students, city) => {
+  const arratyObjec = students.filter((funtion) => funtion.location === city);
+  return arratyObjec;
 };
 
-export default getListStudentIds;
+export default getStudentsByLocation;
